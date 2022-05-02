@@ -5,17 +5,16 @@ module.exports = {
   mode: "development",
   entry: {
     index: "./src/index.js",
-    navbar: "./src/navbar.js",
-    home: "./src/home.js",
   },
   devtool: "inline-source-map",
   plugins: [
     new HtmlWebpackPlugin({
       title: "Blue Cat Lodge",
+      template: "./src/index.html",
     }),
   ],
   output: {
-    filename: "[name].bundle.js",
+    filename: "main.js",
     path: path.resolve(__dirname, "dist"),
     clean: true,
   },

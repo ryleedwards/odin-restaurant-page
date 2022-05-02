@@ -42,7 +42,6 @@
   height: 100vh;
 }
 
-.header {
-  height: 10vh;
+#nav {
   background-color: var(--prim-8);
 }

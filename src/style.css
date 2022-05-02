@@ -1,6 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Fredoka+One&family=Open+Sans&family=Pacifico&display=swap");
 
 :root {
+  --font-prim: "Open Sans", sans-serif;
+  --font-second: "Fredoka One", cursive;
+  --font-logo: "Pacifico", cursive;
+
   --prim-9: #03045eff;
   --prim-8: #023e8aff;
   --prim-7: #0077b6ff;
@@ -42,6 +46,31 @@
   height: 100vh;
 }
 
-#nav {
+#header {
+  padding-left: 60px;
   background-color: var(--prim-8);
+  height: 15vh;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  align-items: center;
+}
+
+#nav-logo {
+  color: var(--gray-1);
+  font-family: var(--font-logo);
+  font-size: 3rem;
+}
+
+.nav-list {
+  list-style-type: none;
+  color: var(--gray-1);
+  font-family: var(--font-second);
+  font-size: 2.5rem;
+  text-transform: capitalize;
+  display: flex;
+  gap: 16px;
+  justify-content: space-evenly;
+}
+
+.nav-links {
 }

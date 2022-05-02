@@ -35,3 +35,14 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+#content {
+  font-family: "Open Sans", sans-serif;
+  background-color: var(--gray-1);
+  height: 100vh;
+}
+
+.header {
+  height: 10vh;
+  background-color: var(--prim-8);
+}

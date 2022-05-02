@@ -19,4 +19,4 @@ let content = createElement({
 
 document.body.appendChild(content);
 
-export { createElement };
+export { createElement, content };

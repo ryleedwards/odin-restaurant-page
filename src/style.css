@@ -95,3 +95,22 @@
   font-size: 2rem;
   color: var(--gray-1);
 }
+
+.main {
+  position: relative;
+}
+
+.main > .main-center {
+  height: 100%;
+  position: relative;
+  background-image: url("./assets/img/background.jpg");
+  background-repeat: no-repeat;
+}
+
+.main-center-overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}

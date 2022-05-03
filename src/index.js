@@ -2,17 +2,21 @@ import "./style.css";
 import createElement from "./util/createElement";
 import { createNavbar } from "./navbar";
 import { createHome } from "./home";
+import createMenu from "./menu";
 
 const content = document.getElementById("content");
 content.appendChild(createNavbar());
 const navs = document.querySelectorAll(".nav-link");
-console.log(navs);
 navs.forEach((a) => {
   a.addEventListener("click", (e) => {
     navigateTo(e.target);
   });
 });
-content.appendChild(createHome());
+/* *****************************  */
+//content.appendChild(createHome());
+/* *****************************  */
+
+content.appendChild(createMenu());
 
 function navigateTo(destination) {
   //remove existing content on the page

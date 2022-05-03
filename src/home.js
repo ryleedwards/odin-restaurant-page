@@ -1,9 +1,9 @@
 import createElement from "./util/createElement";
 
-const main = createElement("div", "", ["main"]);
-const mainCenter = createElement("div", "", ["main-center"]);
-const mainCenterOverlay = createElement("div", "", ["main-center-overlay"]);
-main.appendChild(mainCenter);
-main.appendChild(mainCenterOverlay);
+function createHome() {
+  // create main div, centered
 
-export { main };
+  return main;
+}
+
+export { createHome };

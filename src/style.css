@@ -40,6 +40,11 @@
   box-sizing: border-box;
 }
 
+a.disabled {
+  pointer-events: none;
+  cursor: default;
+}
+
 #content {
   font-family: "Open Sans", sans-serif;
   background-color: var(--gray-1);

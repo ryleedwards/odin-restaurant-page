@@ -28,6 +28,15 @@ module.exports = {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
         type: "asset/resource",
       },
+      {
+        test: /\.csv$/,
+        loader: "csv-loader",
+        options: {
+          dynamicTyping: true,
+          header: true,
+          skipEmptyLines: true,
+        },
+      },
     ],
   },
 };

@@ -4,7 +4,7 @@ import createElement from "./createElement";
 
 function loadMenuData() {
   ingestCSV(menuCSV, menu);
-  return createMenuHTML();
+  return menu;
 }
 
 function ingestCSV(csv, destination) {
@@ -25,26 +25,6 @@ function ingestCSV(csv, destination) {
       destination.add(alcohol);
     }
   });
-}
-
-function createMenuHTML() {
-  let menuMainDiv = createElement("div", "", "menu main");
-  menu.getMenu().forEach((item) => {
-    let itemDiv = createElement("div", "", "menu item");
-    let titleP = createElement("p", "", "item title", item.title);
-    let descriptionP = createElement(
-      "p",
-      "",
-      "item description",
-      item.description
-    );
-    let priceP = createElement("p", "", "item price", item.price);
-    itemDiv.appendChild(titleP);
-    itemDiv.appendChild(descriptionP);
-    itemDiv.appendChild(priceP);
-    menuMainDiv.appendChild(itemDiv);
-  });
-  return menuMainDiv;
 }
 
 export default loadMenuData;

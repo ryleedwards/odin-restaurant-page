@@ -158,3 +158,24 @@ a.disabled {
   color: var(--gray-9);
   cursor: pointer;
 }
+
+.menu.main {
+  background-color: var(--gray-4);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu.item {
+  background-color: var(--gray-8);
+  width: 70%;
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 6fr 1fr;
+  border: solid black 1px;
+  border-radius: 8px;
+  margin: 8px;
+  padding: 16px;
+  color: white;
+}

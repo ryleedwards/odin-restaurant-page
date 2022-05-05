@@ -1,7 +1,8 @@
 import createElement from "./util/createElement";
-import { menu } from "./util/MenuItem";
+import loadMenuData from "./util/loadMenuData";
 
 function createMenu() {
+  const menu = loadMenuData();
   let menuMainDiv = createElement("div", "", "menu main");
   menu.getMenu().forEach((item) => {
     let itemDiv = createElement("div", "", "menu item");

@@ -3,9 +3,6 @@ import createElement from "./util/createElement";
 import { createNavbar } from "./navbar";
 import { createHome } from "./home";
 import createMenu from "./menu";
-import loadMenuData from "./util/loadMenuData";
-
-loadMenuData();
 
 const content = document.getElementById("content");
 content.appendChild(createNavbar());

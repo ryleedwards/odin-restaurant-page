@@ -1,6 +1,5 @@
 import menuCSV from "../assets/menu.csv";
 import { menu, MenuItem, Food, Alcohol } from "./MenuItem";
-import createElement from "./createElement";
 
 function loadMenuData() {
   ingestCSV(menuCSV, menu);

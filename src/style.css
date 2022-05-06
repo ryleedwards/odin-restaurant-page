@@ -179,3 +179,16 @@ a.disabled {
   padding: 16px;
   color: white;
 }
+
+.main.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sub.contact {
+  background-color: var(--gray-9);
+  padding: 16px 64px;
+  color: white;
+  border-radius: 8px;
+}

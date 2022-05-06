@@ -3,6 +3,7 @@ import createElement from "./util/createElement";
 import { createNavbar } from "./navbar";
 import { createHome } from "./home";
 import createMenu from "./menu";
+import createContact from "./contact";
 
 const content = document.getElementById("content");
 content.appendChild(createNavbar());
@@ -17,7 +18,7 @@ navs.forEach((a) => {
 //content.appendChild(createHome());
 /* *****************************  */
 
-content.appendChild(createMenu());
+content.appendChild(createHome());
 
 function navigateTo(destination) {
   //remove existing content on the page
@@ -29,6 +30,11 @@ function navigateTo(destination) {
   if (destination.id == "a-menu") {
     content.appendChild(createMenu());
   }
+
+  if (destination.id == "a-contact") {
+    content.appendChild(createContact());
+  }
+
   destination.classList.toggle("disabled");
   //enable the other destination links
   navs.forEach((a) => {

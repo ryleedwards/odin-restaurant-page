@@ -25,9 +25,11 @@ function navigateTo(destination) {
   //check which nav was clicked and populate page
   if (destination.id == "a-home") {
     content.appendChild(createHome());
-    destination.classList.toggle("disabled");
   }
-
+  if (destination.id == "a-menu") {
+    content.appendChild(createMenu());
+  }
+  destination.classList.toggle("disabled");
   //enable the other destination links
   navs.forEach((a) => {
     if (a !== destination) {
